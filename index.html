@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>เว็บด้วย Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- ใช้ Tailwind ผ่าน CDN -->
+</head>
+
+<body class="flex flex-col items-end p-6 bg-gray-100 font-sans">
+
+  <div class="w-full bg-[#9b59b6] text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-lg font-bold">
+        <a href="http://127.0.0.1:5500/index.html">Website</a> 
+      </h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <button  
+    onclick="showMessage()"
+    class="mt-6 py-6 bg-green-500 text-white text-lg rounded-lg hover:bg-green-600 transition mb-4 ">
+    กดฉันสิ!
+  </button>
+
+  <button 
+    onclick="showAnotherMessage()"
+    class="mt-6 py-3 bg-blue-500 text-white text-lg rounded-lg hover:bg-blue-600 transition">
+    กดฉันอีกอัน!
+  </button>
+
+  <p id="message" class="mt-6 text-xl text-gray-700"></p>
+
+  <script src="home_Main.js"></script>
+
+</body>
+</html>
