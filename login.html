@@ -5,5 +5,28 @@
     <meta charset="UTF-8">
     <title>Login Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+
+<body class = "flex bg-blue-500 items-center justify-center  min-h-screen">
+    <div class = "bg-green-500 w-full p-8 rounded shadow-md max-w-sm" >
+        <h1 class = "text-white text-2xl text-center">Login</h1>
+
+    <form id = "Login_Form">
+        <div class="mb-4">
+            <label class="block mb-1 text-gray-700">Username</label>
+            <input type="text" id = "User_Name" class="w-full border border-gray-300 p-2 focus:outline-none rounded focus:ring-2 focus:ring-blue-500"/>
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-1 text-gray-700">Password</label>
+            <input type="password" id="Password" class="w-full border border-gray-300 p-2 focus:outline-none  rounded focus:ring-2 focus:ring-blue-500" /> 
+        </div> 
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-300 transition mt-2 shadow-md">Login</button>
+        <button type="button" 
+                onclick="window.location.href='index.html'" 
+                class="w-full mt-4 bg-orange-500 text-white py-2 rounded hover:bg-orange-300 transition mt-2 shadow-md">Back</button>
+    </form>
+    <p id = "message" class="mt-2 text-center text-gray-700"></p>
+    </div>
+    
+</body>
