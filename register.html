@@ -12,17 +12,20 @@
         <h1 class ="text-white text-2xl text-center">Registration</h1>
 
         <form id="register_form">
-            <div class="mb-4">
+
+            <div class="form-grop">
                 <label class="block mb-1 text-white">Username</label>
                 <input type="text" id = new_Username placeholder="Username" class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+                <div id = "userMessge" class="message"></div>
             </div>
 
-             <div class="mb-4">
+             <div class="form-grop">
                 <label class="block mb-1 text-white">E-mail</label>
                 <input type="email" id = new_email pattern=".*@gmail\.com$" placeholder="Example@gmail.com" class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+                <div id = "emailMessge" class="message"></div>
             </div>
             
-            <div class="mb-4">
+            <div class="form-grop">
                 <label class="block mb-1 text-white">Password</label>
                 <input type="password" id = new_password placeholder="Password" required
                         minlength="8"
@@ -30,9 +33,10 @@
                         title="ต้องมีตัวเล็ก ตัวใหญ่ และตัวเลขอย่างน้อย 8 ตัวอักษร"   
                         class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
                  <button type="button" id="togglePassword" class="toggle-btn">👁️</button>
+                 <div id = "passwordMessge" class="message"></div>
             </div>
 
-            <div class="mb-4">
+            <div class="form-grop">
                 <label class="block mb-1 text-white">Confrim Password</label>
                 <input type="password" id = new_ConPassword placeholder="Confrim Password" required
                         minlength="8"
@@ -40,7 +44,15 @@
                         title="ต้องมีตัวเล็ก ตัวใหญ่ และตัวเลขอย่างน้อย 8 ตัวอักษร"   
                         class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
                  <button type="button" id="togglePassword" class="toggle-btn">👁️</button>
+                 <div id = "conPassMessge" class="message"></div>
             </div>
+
+            <div class="form-grop">
+                <label class="block mb-1 text-white">Number</label>
+                <input type="tel" id = telNumber placeholder="098-7654321" >
+        
+                 <div id = "telMessge" class="message"></div>
+            </div>    
 
             <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-300 transition mt-2 shadow-md">Register</button>
             <button type="button" 
