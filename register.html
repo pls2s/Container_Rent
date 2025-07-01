@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class = "flex bg-blue-300 items-center justify-center min-h-screen">
+    <div class=" bg-blue-500 w-full p-8 max-w-sm rounded">
+        <h1 class ="text-white text-2xl text-center">Registration</h1>
+
+        <form id="register_form">
+            <div class="mb-4">
+                <label class="block mb-1 text-white">Username</label>
+                <input type="text" id = new_Username placeholder="Username" class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+            </div>
+
+             <div class="mb-4">
+                <label class="block mb-1 text-white">E-mail</label>
+                <input type="email" id = new_email pattern=".*@gmail\.com$" placeholder="Example@gmail.com" class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+            </div>
+            
+            <div class="mb-4">
+                <label class="block mb-1 text-white">Password</label>
+                <input type="password" id = new_password placeholder="Password" required
+                        minlength="8"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}$"
+                        title="ต้องมีตัวเล็ก ตัวใหญ่ และตัวเลขอย่างน้อย 8 ตัวอักษร"   
+                        class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+                 <button type="button" id="togglePassword" class="toggle-btn">👁️</button>
+            </div>
+
+            <div class="mb-4">
+                <label class="block mb-1 text-white">Confrim Password</label>
+                <input type="password" id = new_ConPassword placeholder="Confrim Password" required
+                        minlength="8"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}$"
+                        title="ต้องมีตัวเล็ก ตัวใหญ่ และตัวเลขอย่างน้อย 8 ตัวอักษร"   
+                        class="w-full rounded border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" >
+                 <button type="button" id="togglePassword" class="toggle-btn">👁️</button>
+            </div>
+
+            <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-300 transition mt-2 shadow-md">Register</button>
+            <button type="button" 
+                onclick="window.location.href='index.html'" 
+                class="w-full mt-4 bg-orange-500 text-white py-2 rounded hover:bg-orange-300 transition mt-2 shadow-md">Back</button>
+
+        </form>
+
+    </div>
+
+</body>
